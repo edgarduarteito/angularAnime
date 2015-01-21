@@ -1,8 +1,18 @@
 (function (){
     angular.module('anime.controllers',[])
-            .controller('AnimeController', function () {
-        this.anime = {
+      .controller('PokedexController', ['$scope', '$http', function ($scope, $http) {
+      $scope.pokemons = [];
+
+      $http.get('/animes.json')
+        .success(function (data) {
+          $scope.pokemons = data;
+        });
+    }])
+            .controller('AnimeController',['$scope', function ($scope) {
+        $scope.anime = {
+            id:'01',
             titulo: 'NARUTO SHIPPUDEN',
+            imagen:'naruto',
             tipo: 'Serie',
             genero: ['Super Poderes', 'Shounen', 'Artes Marciales', 'Comedia', 'Accion'],
             estado: 'En emision',
@@ -22,7 +32,7 @@ Empiezan a mover ficha yendo a buscar a los 9 demonios de chakra legendario \n\
 
         };
 
-    })
+    }])
     .controller('TabsController', function () {
         this.tab = 1;
         this.selectTab = function (tab) {
