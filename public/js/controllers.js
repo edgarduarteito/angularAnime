@@ -1,9 +1,9 @@
 (function (){
     angular.module('anime.controllers',[])
-      .controller('PokedexController', ['$scope', '$http', function ($scope, $http) {
+      .controller('PokedexController', ['$scope', 'AnimeService', function ($scope, $AnimeService) {
       $scope.pokemons = [];
 
-      $http.get('/animes.json')
+      $http.get('animes.json')
         .success(function (data) {
           $scope.pokemons = data;
         });

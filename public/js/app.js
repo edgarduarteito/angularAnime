@@ -1,6 +1,6 @@
 (function () {
 //    definicion  modulo angular 
-    var app = angular.module('anime', ['ngRoute', 'anime.controllers', 'anime.directives']);
+    var app = angular.module('anime', ['ngRoute', 'anime.controllers', 'anime.directives','anime.services']);
 
     app.config(['$routeProvider', function ($routeProvider) {
             $routeProvider
