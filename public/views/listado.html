@@ -1,10 +1,19 @@
 <div class="page-header">
     <h1>Anime Angular V1  </h1>
+    <p>Mostrando <span class="badge">{{pokemons.length}}</span> Animes</p>
     
-    <div ng-repeat="ani in pokemons ">
-        
-        <h1>{{ani.titulo}}</h1>
-        <img src="images/{{ani.imagen}}.jpg" alt="Imagen">
-        
+    <div class="row" ng-repeat="ani in pokemons">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="images/{{ani.imagen}}.jpg" alt="Imagen">
+      <div class="caption">
+        <h3><a href="/angularAnime/public/index.html#/anime/{{ani.titulo| normalize}}">{{ani.titulo}}</a></h3>
+        <p>Tipo:{{ani.tipo}}</p>
+        <p>Estado:{{ani.estado}}</p>
+      </div>
     </div>
+  </div>
+</div>
+
+
 </div>

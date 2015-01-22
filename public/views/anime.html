@@ -18,7 +18,7 @@
                             <anime-descripcion></anime-descripcion>
                         </div>
                         <div  ng-show="tabs.tab===3">
-                            <p ng-repeat="episodio in anime.episodios" class=" lead label label-info" ><a style="display: inline-block;" href="http://jkanime.net/naruto-shippuden/{{episodio}}/" target="_blank">Episodio:{{episodio}} {{anime.titulo}} &nbsp; {{episodio}} </a><br></p>
+                            <p ng-repeat="episodio in anime.episodios" class=" lead label label-info" ><a style="display: inline-block;" href="http://jkanime.net/{{anime.titulo |link}}/{{episodio}}/" target="_blank">Episodio:{{episodio}} {{anime.titulo}} &nbsp; {{episodio}} </a><br></p>
                         </div>
                         
                     </div> 
