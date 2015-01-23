@@ -101,7 +101,6 @@
 
                         $http.get('animes.json')
                                 .success(function (data) {
-                                    console.log(data);
                                     deferred.resolve(data);
                                 });
 

@@ -31,14 +31,19 @@
                                 $scope.anime = data;
                             });
                 }])
-            .controller('TabsController', function () {
-                this.tab = 1;
-                this.selectTab = function (tab) {
-                    this.tab = tab;
+            .controller('TabsController',['$scope', function ($scope) {
+                $scope.tab = 1;
+                $scope.selectTab = function (tab) {
+                    $scope.tab = tab;
+
+                };
+                $scope.asignarTab = function (tab) {
+                   $scope.selectTab(1);
+                  
 
                 };
 
-            });
+            }]);
 
 })();
 

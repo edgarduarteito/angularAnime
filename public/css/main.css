@@ -6484,11 +6484,36 @@ background:-webkit-gradient(radial, 165 0, 0, 220 -257, 465, from(#393F68), to(#
   background-color: #f8d030;
   border: solid 1px #a1871f;
 }
-
+     
 .type-accion {
   background-color: #e0c068;
   border: solid 1px #927d44;
 }
+.type-aventura {
+  background-color: #c12e2a;
+  border: solid 1px #927d44;
+}
+.type-comedia {
+  background-color: #ec971f;
+  border: solid 1px #927d44;
+}
+.type-fantasia {
+  background-color: #ddd;
+  border: solid 1px #927d44;
+}
+.type-magia {
+  background-color: #faf2cc;
+  border: solid 1px #927d44;
+}
+.type-militar {
+  background-color: #398439;
+  border: solid 1px #927d44;
+}
+.type-drama {
+  background-color: #d9edf7;
+  border: solid 1px #927d44;
+}
+
 .ng-invalid.ng-dirty {
   border-color: #D9230F;
 }

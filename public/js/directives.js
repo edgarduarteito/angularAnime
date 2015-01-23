@@ -15,6 +15,13 @@
 
         };
     })
+    .directive('animeEpisodios', function () {
+        return{
+            restrict: 'E',
+            templateUrl: 'partials/anime-episodios.html'
+
+        };
+    })
 //    .directive('animeComentario', function () {
 //        return{
 //            restrict: 'E',
